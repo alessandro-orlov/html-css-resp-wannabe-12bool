@@ -86,6 +86,10 @@ img {
     color: #333;
   }
 
+  .row .heading {
+    margin: 10px auto;
+  }
+
   .row h1 {
     margin: 10px auto 30px;
     font-size: 2em;
@@ -96,7 +100,6 @@ img {
     margin: 15px auto;
     font-size: 1.35em;
   }
-
 
   .row h1.animation {
     display: inline-block;
@@ -128,13 +131,11 @@ img {
   100% {left: 0px; top: 0px; width: 3px; height: 3px;}
   }
 
-
-
   #lezioni .row .lesson-box,
   #steps .row .steps-box,
   #why .row .why-box {
     padding: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   #lezioni .row img {
@@ -191,7 +192,7 @@ img {
   }
 }
 
-
+/*=================*/
 /* MAX WIDTH 410px */
 @media all and (max-width:409px) {
   .anim {
