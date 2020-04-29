@@ -91,7 +91,36 @@ img {
   .row h1 {
     margin: 10px auto 40px;
     font-size: 2em;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
   }
+
+  .anim {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #e91e63;
+    animation: anim 2s linear infinite;
+  }
+
+  @keyframes anim {
+  0%   {left: 0px; top: 0px; width: 100px; height: 3px;}
+  24%  {left: 370px; top: 0px; width: 3px; height: 3px;}
+  25%  {left: 370px; top: 0px; width: 3px; height: 3px;}
+
+  44%  {left: 370px; top: 67px; width: 3px; height: 25px;}
+  45%  {left: 370px; top: 67px; width: 3px; height: 3px;}
+
+  74%  {left: 0px; top: 67px; width: 100px; height: 3px;}
+  75%  {left: 0px; top: 67px; width: 3px; height: 3px;}
+
+  99%  {left: 0px; top: 0px; width: 3px; height: 25px;}
+  100% {left: 0px; top: 0px; width: 3px; height: 3px;}
+  }
+
   .row h3 {
     margin: 15px auto;
     font-size: 1.35em;
@@ -105,6 +134,10 @@ img {
 
   #lezioni .row img {
     height: 150px;
+  }
+
+  .container.grey {
+    background-color: #d5dce5;
   }
 
 }
@@ -126,5 +159,34 @@ img {
 
   #lezioni .row img {
     height: 120px;
+  }
+}
+
+
+/* MAX WIDTH 410px */
+@media all and (max-width:409px) {
+  .anim {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #e91e63;
+    animation: anim 2s linear infinite;
+  }
+
+  @keyframes anim {
+  0%   {left: 0px; top: 0px; width: 100px; height: 3px;}
+  24%  {left: 320px; top: 0px; width: 3px; height: 3px;}
+  25%  {left: 320px; top: 0px; width: 3px; height: 3px;}
+
+  44%  {left: 320px; top: 90px; width: 3px; height: 25px;}
+  45%  {left: 330px; top: 90px; width: 3px; height: 3px;}
+
+  74%  {left: 0px; top: 90px; width: 100px; height: 3px;}
+  75%  {left: 0px; top: 90px; width: 3px; height: 3px;}
+
+  99%  {left: 0px; top: 0px; width: 3px; height: 25px;}
+  100% {left: 0px; top: 0px; width: 3px; height: 3px;}
   }
 }
