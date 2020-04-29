@@ -2,7 +2,8 @@
 /* BEGIN FRAMEWORK */
 
 /* BEGIN DEBUG */
-.debug .container {
+
+/* .debug .container {
   background-color: red;
 }
 
@@ -14,14 +15,16 @@
 }
 
 .debug .container [class*="col-"]> .container {
-  height: 100%; /* Important */
+  height: 100%;
 }
+
 
 .container [class*="col-"]> .container [class*="col-"] {
   background-color: #f07f80;
   border: 1px solid #fff;
-  height: 100%; /* Important */
-}
+  height: 100%;
+} */
+
 /* END DEBUG */
 
 /* BEGIN COMMON RULES */
@@ -79,7 +82,7 @@
 }
 
 /* MEDIUM DEVICE MEDIA QUERY  */
-@media screen and (min-width:480px) and (max-width:992) {
+@media screen and (min-width:480px) and (max-width:992px) {
   .col-md-1    { width: calc((100%/12) * 1); }
   .col-md-2    { width: calc((100%/12) * 2); }
   .col-md-3    { width: calc((100%/12) * 3); }
