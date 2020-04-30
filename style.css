@@ -168,7 +168,7 @@ img {
 
 /*=================*/
 /* MAX WIDTH 480px */
-@media all and (max-width:480px){
+@media all and (max-width:767px){
   #lezioni .row .lesson-box {
     box-shadow: 0px 0px 12px 4px #dbe1e9;
   }
